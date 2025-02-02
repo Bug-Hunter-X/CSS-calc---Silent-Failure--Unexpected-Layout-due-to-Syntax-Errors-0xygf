@@ -1,0 +1,28 @@
+/* bug.css (incorrect) */
+.box {
+  width: calc(100px + 50%); /* Missing closing parenthesis */
+}
+
+/* bugSolution.css (corrected) */
+.box {
+  width: calc(100px + 50%); 
+}
+
+/* Another example of an incorrect calc() */
+.box2 {
+  width: calc(100px + 50%)
+}
+
+/* Correct version */
+.box2 {
+  width: calc(100px + 50%);
+}
+
+/* Example demonstrating operator precedence issue */
+.box3 {
+  height: calc(20px * 2 + 10px); /* correct */
+}
+
+.box4 {
+  height: calc(20px * (2 + 10px)); /* Incorrect operator precedence */
+}
