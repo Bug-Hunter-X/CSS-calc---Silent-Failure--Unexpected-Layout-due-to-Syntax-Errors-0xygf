@@ -1,0 +1,1 @@
+The CSS property `calc()` is used to perform calculations. However, if there is a syntax error in the calculation, the entire property will be ignored silently, leading to unexpected results.  For example, missing parentheses or incorrect operator usage can cause this.  Browsers don't always provide helpful error messages in these situations.
